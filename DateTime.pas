@@ -1,8 +1,20 @@
 ﻿begin
   var r:=readinteger;
+  var b:=false;
   if ((r mod 4=0) and (r mod 100<>0)) or (r mod 400=0) then
-    Println('True')
+    b:=true;
+  Print('Высокосноть',b);
+  println('Секунды',readinteger()*60);
+  if (b=true) then
+    Print(366)
   else
-    Println('False');
-  println(readinteger()*60);
+    Print(365);
+  var sum:=0;
+  var n:=readinteger;
+  for var i:=r to n do
+    if ((i mod 4=0) and (i mod 100<>0)) or (i mod 400=0) then
+      sum+=366
+    else
+      sum+=365;
+  Print('Дней',sum);
 end.
