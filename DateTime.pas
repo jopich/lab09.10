@@ -17,4 +17,6 @@
     else
       sum+=365;
   Print('Дней',sum);
+  var h:=readinteger;
+  Print('Секунды в часах', h*3600);
 end.
