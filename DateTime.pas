@@ -19,4 +19,9 @@
   Print('Дней',sum);
   var h:=readinteger;
   Print('Секунды в часах', h*3600);
+  var j:=false;
+  var k:=readinteger;
+  if (k=1992) or (k=2005) or (r=2011) then
+    j:=true;
+  Print('Апокалипсис',j);
 end.
